@@ -1,9 +1,9 @@
 import "@/theme-fonts"
 
-import { Global } from "@emotion/react"
+import ColorVariables from "@/components/theme/color-variables"
 
 function Theme() {
-  return <Global styles={{}} />
+  return <ColorVariables />
 }
 
 export default Theme
