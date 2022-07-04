@@ -1,3 +1,5 @@
+import "@/theme-fonts"
+
 import { Global } from "@emotion/react"
 
 function Theme() {
