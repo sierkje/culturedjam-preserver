@@ -39,10 +39,28 @@ type ThemeFontVariable = ThemeFontFamilyVariable | ThemeFontWeightVariable
 
 type ThemeFonts = Record<ThemeFontFamilyVariable, string> & Record<ThemeFontWeightVariable, number>
 
+type ThemeSizeVariable =
+  | "--header-outer-height"
+  | "--header-inner-height"
+  | "--gutter-size"
+  | "--max-content-width"
+
+type ThemeSizes = Record<
+  ThemeSizeVariable,
+  { size: number; unit: "px" | "rem" | "ch" | "em" | "%" }
+>
+
 interface ThemeConstants {
   BASE_FONT_SIZE_PX: number
   HEADING_SIZE_RATIO: number
-  TOUCH_TARGET_SIZE_PX: 44
+  /**
+   * Touch target size (in px) should be at least 44.
+   */
+  TOUCH_TARGET_SIZE_PX: number
+  /**
+   * For optimal readability the maximum sentence length (in ch) should be around 60-75, min. 50 and max. 85.
+   */
+  MAX_SENTENCE_LENGTH_CH: number
 }
 
 export type {
@@ -53,4 +71,6 @@ export type {
   ThemeConstants,
   ThemeFonts,
   ThemeFontVariable,
+  ThemeSizes,
+  ThemeSizeVariable,
 }
