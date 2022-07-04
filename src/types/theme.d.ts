@@ -31,6 +31,13 @@ interface ThemeColors {
   names: Record<ThemeColorName, HslColor>
   variables: Record<ThemeColorVariable, { light: ThemeColorName; dark: ThemeColorName }>
 }
+type ThemeFontFamilyVariable = "--body-font-family" | "--heading-font-family"
+
+type ThemeFontWeightVariable = "--body-font-weight" | "--heading-font-weight"
+
+type ThemeFontVariable = ThemeFontFamilyVariable | ThemeFontWeightVariable
+
+type ThemeFonts = Record<ThemeFontFamilyVariable, string> & Record<ThemeFontWeightVariable, number>
 
 interface ThemeConstants {
   BASE_FONT_SIZE_PX: number
@@ -38,4 +45,12 @@ interface ThemeConstants {
   TOUCH_TARGET_SIZE_PX: 44
 }
 
-export type { HslColor, ThemeColorName, ThemeColors, ThemeColorVariable, ThemeConstants }
+export type {
+  HslColor,
+  ThemeColorName,
+  ThemeColors,
+  ThemeColorVariable,
+  ThemeConstants,
+  ThemeFonts,
+  ThemeFontVariable,
+}
