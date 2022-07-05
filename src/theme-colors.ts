@@ -1,16 +1,16 @@
 import type { ThemeColors } from "@/types/theme"
 
 const names: ThemeColors["names"] = {
-  ALMOST_BLACK: [0, 0, 0],
-  DARKEST_GREY: [0, 0, 0.95],
-  DARK_GREY: [0, 0, 0.85],
-  MEDIUM_GREY: [0, 0, 0],
-  LIGHT_GREY: [0, 0, 0],
-  LIGHTEST_GREY: [0, 0, 0],
-  ALMOST_WHITE: [0, 0, 0],
-  BLUEBERRY_JAM: [0, 0, 0],
-  ORANGE_MARMALADE: [0, 0, 0],
-  PINEAPPLE_JAM: [0, 0, 0],
+  ALMOST_BLACK: [0, 0, 0.15],
+  DARKEST_GREY: [0, 0, 0.25],
+  DARK_GREY: [0, 0, 0.35],
+  MEDIUM_GREY: [0, 0, 0.55],
+  LIGHT_GREY: [0, 0, 0.75],
+  LIGHTEST_GREY: [0, 0, 0.85],
+  ALMOST_WHITE: [0, 0, 0.95],
+  BLUEBERRY_JAM: [250, 1, 0.4],
+  ORANGE_MARMALADE: [25, 1, 0.45],
+  PINEAPPLE_JAM: [40, 1, 0.5],
 }
 
 const variables: ThemeColors["variables"] = {
