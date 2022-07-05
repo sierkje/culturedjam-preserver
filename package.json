@@ -24,6 +24,7 @@
     "@emotion/react": "^11.9.3",
     "@fontsource/jura": "^4.5.10",
     "@fontsource/kanit": "^4.5.8",
+    "@fontsource/major-mono-display": "^4.5.9",
     "@vanilla-extract/css-utils": "^0.1.2",
     "gatsby": "^4.17.2",
     "gatsby-plugin-image": "^2.17.0",

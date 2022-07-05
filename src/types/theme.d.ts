@@ -32,9 +32,15 @@ interface ThemeColors {
   names: Record<ThemeColorName, HslColor>
   variables: Record<ThemeColorVariable, { light: ThemeColorName; dark: ThemeColorName }>
 }
-type ThemeFontFamilyVariable = "--body-font-family" | "--heading-font-family"
+type ThemeFontFamilyVariable =
+  | "--body-font-family"
+  | "--heading-font-family"
+  | "--fancy-font-family"
 
-type ThemeFontWeightVariable = "--body-font-weight" | "--heading-font-weight"
+type ThemeFontWeightVariable =
+  | "--body-font-weight"
+  | "--heading-font-weight"
+  | "--fancy-font-weight"
 
 type ThemeFontVariable = ThemeFontFamilyVariable | ThemeFontWeightVariable
 

@@ -1235,6 +1235,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/kanit/-/kanit-4.5.8.tgz#bb53ccfcd1b858ba165119e25a60aefa6a098332"
   integrity sha512-Ko4lzzqyesaDAlHY+9EJdAdiFFHwtgarCjBlxI8hMyng/hI9CwAVoOjl6oVgwiFJh4+6fMoUM9+f8x4io5KcdA==
 
+"@fontsource/major-mono-display@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/major-mono-display/-/major-mono-display-4.5.9.tgz#75c6af71172a7368f74a9f7bb1a74da839f9057e"
+  integrity sha512-7jtDHco15t0ZQongZPZfoDbtJNafO6aFYOn0txI/yqmJi4NXxKisaBB8pFtcP8N1lnXZcEQDC6M/yVCXbgxFEA==
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.2.0.tgz#3ebc0e5bbe90e7a897d5427c2b67ffe26730228f"
