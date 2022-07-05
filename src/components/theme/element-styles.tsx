@@ -5,7 +5,7 @@ import cssVar from "@/helpers/css-var"
 import themeConstants from "@/theme-constants"
 import type { HeadingElement } from "@/types/theme"
 
-const { BASE_FONT_SIZE_PX } = themeConstants
+const { BASE_FONT_SIZE_PX, BASE_LINE_HEIGHT_PX } = themeConstants
 
 function headingStyles(hx: HeadingElement) {
   return `
@@ -24,6 +24,7 @@ const styles = css`
   html {
     border: 0;
     font-size: ${(BASE_FONT_SIZE_PX / 16) * 100}%;
+    line-height: ${BASE_LINE_HEIGHT_PX / BASE_FONT_SIZE_PX};
     margin: 0;
     overflow-y: auto;
     padding: 0;

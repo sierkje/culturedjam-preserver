@@ -61,6 +61,7 @@ type ThemeSizes = Record<
 
 interface ThemeConstants {
   BASE_FONT_SIZE_PX: number
+  BASE_LINE_HEIGHT_PX: number
   HEADING_SIZE_RATIO: number
   /**
    * Touch target size (in px) should be at least 44.

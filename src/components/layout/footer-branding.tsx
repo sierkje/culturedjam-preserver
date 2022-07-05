@@ -26,6 +26,7 @@ const sloganCss = css`
   align-items: center;
   display: flex;
   font-size: 1.5rem;
+  line-height: 1.25;
   height: 100%;
   text-align: right;
 
