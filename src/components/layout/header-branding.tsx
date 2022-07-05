@@ -20,7 +20,7 @@ function LayoutHeaderBranding() {
   return (
     <Fragment>
       <Link to="/" css={linkCss} aria-hidden>
-        <JarOfCulturedJam size={BASE_FONT_SIZE_PX * 4} />
+        <JarOfCulturedJam role="img" size={BASE_FONT_SIZE_PX * 4} />
       </Link>
       <VisuallyHidden as="h1">{siteName}</VisuallyHidden>
     </Fragment>

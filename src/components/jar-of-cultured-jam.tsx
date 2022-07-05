@@ -1,5 +1,7 @@
 import type * as React from "react"
+import { useId } from "react"
 
+import VisuallyHidden from "@/components/visually-hidden"
 import cssVar from "@/helpers/css-var"
 
 type JamProps = { flavor: string }
@@ -12,9 +14,6 @@ function ActualRealJam({ flavor }: JamProps) {
     />
   )
 }
-
-const popupTitle = (isEmpty: boolean) =>
-  ` This jar is ${isEmpty ? `all out of` : `full with`} Cultured Jam`
 
 type JarProps = React.ComponentPropsWithRef<"svg"> & {
   isEmpty?: boolean
@@ -37,16 +36,20 @@ function JarOfCulturedJam(props: JarProps): JSX.Element {
     ...restProps
   } = props
 
+  const ariaLabelId = useId()
+
   return (
     <svg
-      aria-labelledby="title"
-      height={size}
       role="img"
+      aria-labelledby={ariaLabelId}
+      height={size}
       viewBox="0 0 47.625 47.625"
       width={size}
       {...restProps}
     >
-      <title>{popupTitle(isEmpty)}</title>
+      <VisuallyHidden as="desc" id={ariaLabelId}>
+        A jar of Cultured Jam
+      </VisuallyHidden>
       <g transform="translate(0 -5.2917)">
         <g transform="translate(-2.6458 2.3812)">
           {!isEmpty && <ActualRealJam flavor={flavor} />}
