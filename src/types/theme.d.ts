@@ -1,3 +1,5 @@
+type HeadingElement = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+
 type HslColor = readonly [number, number, number]
 
 type ThemeColorName =
@@ -45,6 +47,14 @@ type ThemeSizeVariable =
   | "--gutter-size"
   | "--max-content-width"
 
+type ThemeHeadingSizeVariable =
+  | "--h1-font-size"
+  | "--h2-font-size"
+  | "--h3-font-size"
+  | "--h4-font-size"
+  | "--h5-font-size"
+  | "--h6-font-size"
+
 type ThemeSizes = Record<
   ThemeSizeVariable,
   { size: number; unit: "px" | "rem" | "ch" | "em" | "%" }
@@ -63,14 +73,23 @@ interface ThemeConstants {
   MAX_SENTENCE_LENGTH_CH: number
 }
 
+type ThemeCssVariable =
+  | ThemeColorVariable
+  | ThemeFontVariable
+  | ThemeHeadingSizeVariable
+  | ThemeSizeVariable
+
 export type {
+  HeadingElement,
   HslColor,
   ThemeColorName,
   ThemeColors,
   ThemeColorVariable,
   ThemeConstants,
+  ThemeCssVariable,
   ThemeFonts,
   ThemeFontVariable,
+  ThemeHeadingSizeVariable,
   ThemeSizes,
   ThemeSizeVariable,
 }
