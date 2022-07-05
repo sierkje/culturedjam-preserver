@@ -1,4 +1,4 @@
-import ColorSchemeWidget from "../color-scheme-widget"
+import ColorSchemeWidget from "@/components/color-scheme-widget"
 
 function LayoutHeaderWidgets() {
   return <ColorSchemeWidget />

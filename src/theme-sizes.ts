@@ -1,5 +1,4 @@
-import themeConstants from "./theme-constants"
-
+import themeConstants from "@/theme-constants"
 import type { ThemeSizes } from "@/types/theme"
 
 const { MAX_SENTENCE_LENGTH_CH, TOUCH_TARGET_SIZE_PX } = themeConstants

@@ -1,6 +1,6 @@
 import type * as React from "react"
 
-import MaxWidthContainer from "../max-width-container"
+import MaxWidthContainer from "@/components/max-width-container"
 
 type LayoutMainContentProps = { children: React.ReactNode }
 

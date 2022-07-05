@@ -1,4 +1,4 @@
-import themeConstants from "./theme-constants"
+import themeConstants from "@/theme-constants"
 
 const { BASE_FONT_SIZE_PX, HEADING_SIZE_RATIO, MAX_SENTENCE_LENGTH_CH, TOUCH_TARGET_SIZE_PX } =
   themeConstants

@@ -6,7 +6,7 @@
 import "@fontsource/kanit/800.css"
 import "@fontsource/jura"
 
-import type { ThemeFonts } from "./types/theme"
+import type { ThemeFonts } from "@/types/theme"
 
 const themeFonts: ThemeFonts = {
   "--body-font-family": `"Jura", sans-serif`,

@@ -1,6 +1,6 @@
 import type * as React from "react"
 
-import cssVar from "../helpers/css-var"
+import cssVar from "@/helpers/css-var"
 
 type JamProps = { flavor: string }
 
