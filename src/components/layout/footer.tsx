@@ -1,10 +1,9 @@
 import { css } from "@emotion/react"
 import { calc } from "@vanilla-extract/css-utils"
 
-import cssVar from "../../helpers/css-var"
-import MaxWidthContainer from "../max-width-container"
-
-import Slogan from "@/components/layout/footer-slogan"
+import Branding from "@/components/layout/footer-branding"
+import MaxWidthContainer from "@/components/max-width-container"
+import cssVar from "@/helpers/css-var"
 
 const gutterSize = cssVar(`--gutter-size`)
 const outerWrapperMarginTop = calc(gutterSize).multiply(4).toString()
@@ -22,7 +21,7 @@ function LayoutFooter() {
   return (
     <footer css={outerWrapperCss}>
       <MaxWidthContainer>
-        <Slogan />
+        <Branding />
       </MaxWidthContainer>
     </footer>
   )
