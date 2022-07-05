@@ -1,11 +1,11 @@
 import { css } from "@emotion/react"
 import { calc } from "@vanilla-extract/css-utils"
 
-import cssVar from "../../helpers/css-var"
-import MaxWidthContainer from "../max-width-container"
-
+import Branding from "@/components/layout/header-branding"
 import Menu from "@/components/layout/header-menu"
 import Widgets from "@/components/layout/header-widgets"
+import MaxWidthContainer from "@/components/max-width-container"
+import cssVar from "@/helpers/css-var"
 
 const headerMarginTop = calc(cssVar(`--gutter-size`))
   .add(cssVar(`--header-outer-height`))
@@ -44,17 +44,27 @@ const outerWrapperCss = css`
 const innerWrapperCss = css`
   height: ${cssVar(`--header-inner-height`)};
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: min-content 1fr max-content;
   grid-template-rows: 1fr;
+`
+
+const brandingCss = css`
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 `
 
 function LayoutHeader() {
   return (
-    <header css={outerWrapperCss}>
-      <MaxWidthContainer css={innerWrapperCss}>
-        <nav>
+    <header role="banner" css={outerWrapperCss}>
+      <MaxWidthContainer as="nav" css={innerWrapperCss}>
+        <div css={brandingCss}>
+          <Branding />
+        </div>
+        <div>
           <Menu />
-        </nav>
+        </div>
         <div>
           <Widgets />
         </div>
