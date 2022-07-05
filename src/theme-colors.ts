@@ -15,7 +15,7 @@ const names: ThemeColors["names"] = {
 
 const variables: ThemeColors["variables"] = {
   "--body-text-color": { light: `DARK_GREY`, dark: `LIGHT_GREY` },
-  "--body-bg-color": { light: `LIGHT_GREY`, dark: `DARK_GREY` },
+  "--body-bg-color": { light: `ALMOST_WHITE`, dark: `ALMOST_BLACK` },
   "--body-link-color-normal": { light: `BLUEBERRY_JAM`, dark: `PINEAPPLE_JAM` },
   "--body-link-color-active": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
   "--body-link-color-underline": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
