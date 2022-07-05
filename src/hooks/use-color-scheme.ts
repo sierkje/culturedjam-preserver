@@ -72,5 +72,6 @@ function useColorScheme(): [[ColorScheme, ColorSchemePreference], SetColorScheme
   return [[scheme, preference], setColorSchemePreference]
 }
 
+export type { ColorScheme, ColorSchemePreference }
 export { COLOR_SCHEME_CLASS_NAME, COLOR_SCHEME_LOCAL_STORAGE_KEY, COLOR_SCHEME_MQ }
 export default useColorScheme
