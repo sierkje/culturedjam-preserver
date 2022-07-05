@@ -1,8 +1,9 @@
 function NotFoundPage() {
   return (
-    <main>
+    <section>
+      <h1>Page not found</h1>
       <p>Not Found.</p>
-    </main>
+    </section>
   )
 }
 

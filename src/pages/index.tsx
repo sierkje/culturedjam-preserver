@@ -1,9 +1,9 @@
 function HomePage() {
   return (
-    <main>
+    <section>
       <h1>Welcome Home!</h1>
       <p>This website needs some content and the code needs some tests.</p>
-    </main>
+    </section>
   )
 }
 

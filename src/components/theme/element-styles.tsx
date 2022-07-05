@@ -1,5 +1,4 @@
 import { css, Global } from "@emotion/react"
-import { calc } from "@vanilla-extract/css-utils"
 
 import cssVar from "@/helpers/css-var"
 import themeConstants from "@/theme-constants"
@@ -37,9 +36,7 @@ const styles = css`
     font-family: ${cssVar(`--body-font-family`)};
     font-size: 1rem;
     font-weight: ${cssVar(`--body-font-weight`)};
-    margin-left: ${cssVar(`--gutter-size`)};
-    margin-right: ${cssVar(`--gutter-size`)};
-    margin-top: ${calc(cssVar(`--header-outer-height`)).add(cssVar(`--gutter-size`)).toString()};
+    padding: 0 ${cssVar(`--gutter-size`)};
   }
 
   a {
