@@ -14,21 +14,21 @@ const names: ThemeColors["names"] = {
 }
 
 const variables: ThemeColors["variables"] = {
-  "--body-text-color": { light: `DARK_GREY`, dark: `LIGHT_GREY` },
-  "--body-bg-color": { light: `ALMOST_WHITE`, dark: `ALMOST_BLACK` },
-  "--body-link-color-normal": { light: `BLUEBERRY_JAM`, dark: `PINEAPPLE_JAM` },
-  "--body-link-color-active": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
-  "--body-link-color-underline": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
+  "--body-color-primary": { light: `ALMOST_BLACK`, dark: `ALMOST_WHITE` },
+  "--body-color-secondary": { light: `ALMOST_WHITE`, dark: `ALMOST_BLACK` },
+  "--body-link-color-primary": { light: `BLUEBERRY_JAM`, dark: `PINEAPPLE_JAM` },
+  "--body-link-color-secondary": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
 
-  "--header-text-color": { light: `MEDIUM_GREY`, dark: `MEDIUM_GREY` },
-  "--header-bg-color": { light: `LIGHTEST_GREY`, dark: `DARKEST_GREY` },
-  "--header-link-color-normal": { light: `DARK_GREY`, dark: `LIGHT_GREY` },
-  "--header-link-color-active": { light: `ALMOST_BLACK`, dark: `ALMOST_WHITE` },
-  "--header-link-color-underline": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
+  "--footer-color": { light: `MEDIUM_GREY`, dark: `MEDIUM_GREY` },
 
-  "--heading-color": { light: `DARKEST_GREY`, dark: `LIGHTEST_GREY` },
+  "--header-color-primary": { light: `MEDIUM_GREY`, dark: `MEDIUM_GREY` },
+  "--header-color-secondary": { light: `LIGHTEST_GREY`, dark: `DARKEST_GREY` },
+  "--header-link-color-primary": { light: `DARK_GREY`, dark: `LIGHT_GREY` },
+  "--header-link-color-secondary": { light: `ALMOST_BLACK`, dark: `ALMOST_WHITE` },
 
-  "--highlight-color": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
+  "--heading-color": { light: `DARK_GREY`, dark: `LIGHT_GREY` },
+
+  "--highlight-color-primary": { light: `ORANGE_MARMALADE`, dark: `ORANGE_MARMALADE` },
   "--highlight-color-secondary": { light: `ALMOST_WHITE`, dark: `ALMOST_WHITE` },
 }
 

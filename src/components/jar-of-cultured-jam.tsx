@@ -30,7 +30,12 @@ type JarOfCulturedJamProps = EmptyJarProps | FullJarProps
 function JarOfCulturedJam(props: EmptyJarProps): JSX.Element
 function JarOfCulturedJam(props: FullJarProps): JSX.Element
 function JarOfCulturedJam(props: JarProps): JSX.Element {
-  const { flavor = cssVar(`--highlight-color`), size, isEmpty = false, ...restProps } = props
+  const {
+    flavor = cssVar(`--highlight-color-primary`),
+    size,
+    isEmpty = false,
+    ...restProps
+  } = props
 
   return (
     <svg

@@ -48,7 +48,7 @@ const linkCss = css`
 
   &:active,
   &:hover {
-    border-bottom-color: ${cssVar(`--header-link-color-underline`)};
+    border-bottom-color: ${cssVar(`--highlight-color-primary`)};
     text-decoration: none;
   }
 `

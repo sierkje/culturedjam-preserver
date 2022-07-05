@@ -18,8 +18,8 @@ const headerPaddingY = calc(cssVar(`--header-outer-height`))
   .toString()
 
 const outerWrapperCss = css`
-  background-color: ${cssVar(`--header-bg-color`)};
-  color: ${cssVar(`--header-text-color`)};
+  background-color: ${cssVar(`--header-color-secondary`)};
+  color: ${cssVar(`--header-color-primary`)};
   left: 0;
   margin: ${headerMarginTop} ${headerMarginX} 0;
   position: sticky;
@@ -30,15 +30,15 @@ const outerWrapperCss = css`
   z-index: +1;
 
   a {
-    color: ${cssVar(`--header-link-color-normal`)};
+    color: ${cssVar(`--header-link-color-primary`)};
     font-weight: 900;
     text-decoration: none;
   }
 
   a:active,
   a:hover {
-    color: ${cssVar(`--header-link-color-active`)};
-    text-decoration-color: ${cssVar(`--header-link-color-underline`)};
+    color: ${cssVar(`--header-link-color-secondary`)};
+    text-decoration-color: ${cssVar(`--highlight-color-primary`)};
   }
 `
 const innerWrapperCss = css`

@@ -12,7 +12,8 @@ const outerWrapperMarginBottom = `auto`
 const outerWrapperPaddingTop = calc(gutterSize).multiply(2).toString()
 
 const outerWrapperCss = css`
-  border-top: 4px dotted ${cssVar(`--highlight-color`)};
+  color: ${cssVar(`--footer-color`)};
+  border-top: 4px dotted ${cssVar(`--highlight-color-primary`)};
   margin: ${outerWrapperMarginTop} ${outerWrapperMarginX} ${outerWrapperMarginBottom};
   padding: ${outerWrapperPaddingTop} ${gutterSize} ${gutterSize};
 `

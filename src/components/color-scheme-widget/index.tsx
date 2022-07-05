@@ -35,7 +35,7 @@ const toggleButtonCss = css`
 
   &:hover,
   &[data-has-menu="true"] {
-    border-color: ${cssVar(`--highlight-color`)};
+    border-color: ${cssVar(`--highlight-color-primary`)};
   }
 `
 
@@ -52,9 +52,9 @@ const preferenceMenuCss = (size: number) => css`
 `
 
 const preferenceButtonCss = css`
-  background-color: ${cssVar(`--body-text-color`)};
-  border: 2px solid ${cssVar(`--body-bg-color`)};
-  color: ${cssVar(`--body-bg-color`)};
+  background-color: ${cssVar(`--body-color-primary`)};
+  border: 2px solid ${cssVar(`--body-color-secondary`)};
+  color: ${cssVar(`--body-color-secondary`)};
   cursor: pointer;
   justify-content: flex-end;
   padding: 0 ${cssVar(`--gutter-size`)} 0 ${calc(cssVar(`--gutter-size`)).multiply(2).toString()};
@@ -62,15 +62,15 @@ const preferenceButtonCss = css`
 
   &[data-is-current-color-scheme-preference="true"] {
     background-color: ${cssVar(`--highlight-color-secondary`)};
-    border-color: ${cssVar(`--highlight-color`)};
-    color: ${cssVar(`--highlight-color`)};
+    border-color: ${cssVar(`--highlight-color-primary`)};
+    color: ${cssVar(`--highlight-color-primary`)};
     text-transform: uppercase;
   }
 
   &:active,
   &:hover {
-    background-color: ${cssVar(`--highlight-color`)};
-    border-color: ${cssVar(`--body-bg-color`)};
+    background-color: ${cssVar(`--highlight-color-primary`)};
+    border-color: ${cssVar(`--body-color-secondary`)};
     color: ${cssVar(`--highlight-color-secondary`)};
   }
 `

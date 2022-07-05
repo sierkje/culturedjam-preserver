@@ -31,8 +31,8 @@ const styles = css`
   }
 
   body {
-    background-color: ${cssVar(`--body-bg-color`)};
-    color: ${cssVar(`--body-text-color`)};
+    background-color: ${cssVar(`--body-color-secondary`)};
+    color: ${cssVar(`--body-color-primary`)};
     font-family: ${cssVar(`--body-font-family`)};
     font-size: 1rem;
     font-weight: ${cssVar(`--body-font-weight`)};
@@ -42,7 +42,7 @@ const styles = css`
   }
 
   a {
-    color: ${cssVar(`--body-link-color-normal`)};
+    color: ${cssVar(`--body-link-color-primary`)};
     font-weight: bold;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -53,16 +53,16 @@ const styles = css`
 
   a:active,
   a:hover {
-    color: ${cssVar(`--body-link-color-active`)};
+    color: ${cssVar(`--body-link-color-secondary`)};
     text-decoration: underline;
   }
 
   button {
     align-content: center;
-    background-color: ${cssVar(`--body-bg-color`)};
-    border: 1px solid ${cssVar(`--body-text-color`)};
+    background-color: ${cssVar(`--body-color-secondary`)};
+    border: 1px solid ${cssVar(`--body-color-primary`)};
     border-radius: 4px;
-    color: ${cssVar(`--body-text-color`)};
+    color: ${cssVar(`--body-color-primary`)};
     display: flex;
     font-family: ${cssVar(`--body-font-family`)};
     font-size: 1rem;
