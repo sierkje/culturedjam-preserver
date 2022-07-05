@@ -58,7 +58,7 @@ const styles = css`
     align-content: center;
     background-color: ${cssVar(`--body-bg-color`)};
     border: 1px solid ${cssVar(`--body-text-color`)};
-    border-radius: 25%;
+    border-radius: 4px;
     color: ${cssVar(`--body-text-color`)};
     display: flex;
     font-family: ${cssVar(`--body-font-family`)};
