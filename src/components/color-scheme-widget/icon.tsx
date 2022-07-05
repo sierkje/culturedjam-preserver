@@ -95,7 +95,18 @@ const ColorSchemeWidgetIcon = memo((props: ColorSchemeWidgetIconProps) => {
   const { as, color = `currentColor`, ...otherProps } = props
   const Icon = as === `sun` ? Sun : Moon
 
-  return <Icon color={color} {...otherProps} />
+  return (
+    <Icon
+      color={color}
+      pointerEvents="boundingBox"
+      css={{
+        "*": {
+          pointerEvents: `none`,
+        },
+      }}
+      {...otherProps}
+    />
+  )
 })
 
 export { type ColorSchemeWidgetIconProps }

@@ -45,6 +45,12 @@ function JarOfCulturedJam(props: JarProps): JSX.Element {
       height={size}
       viewBox="0 0 47.625 47.625"
       width={size}
+      pointerEvents="boundingBox"
+      css={{
+        "*": {
+          pointerEvents: `none`,
+        },
+      }}
       {...restProps}
     >
       <VisuallyHidden as="desc" id={ariaLabelId}>
