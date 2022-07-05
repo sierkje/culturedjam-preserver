@@ -1,8 +1,9 @@
 import type * as React from "react"
 import { Fragment } from "react"
 
-import Link from "@/components/link"
-import useSiteSlogan from "@/hooks/use-site-slogan"
+import Footer from "@/components/layout/footer"
+import Header from "@/components/layout/header"
+import MainContent from "@/components/layout/main-content"
 
 type LayoutProps = {
   children: React.ReactNode
@@ -10,21 +11,12 @@ type LayoutProps = {
 
 function Layout(props: LayoutProps) {
   const { children } = props
-  const slogan = useSiteSlogan()
 
   return (
     <Fragment>
-      <header>
-        <nav>
-          <menu>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </menu>
-        </nav>
-      </header>
-      <main>{children}</main>
-      <footer>{slogan}</footer>
+      <Header />
+      <MainContent>{children}</MainContent>
+      <Footer />
     </Fragment>
   )
 }
