@@ -5,6 +5,7 @@ import cssVar from "../../helpers/css-var"
 import MaxWidthContainer from "../max-width-container"
 
 import Menu from "@/components/layout/header-menu"
+import Widgets from "@/components/layout/header-widgets"
 
 const headerMarginTop = calc(cssVar(`--gutter-size`))
   .add(cssVar(`--header-outer-height`))
@@ -25,7 +26,7 @@ const outerWrapperCss = css`
   right: 0;
   top: 0;
   height: ${cssVar(`--header-outer-height`)};
-  padding: ${headerPaddingY} 0;
+  padding: ${headerPaddingY} ${cssVar(`--gutter-size`)};
   z-index: +1;
 
   a {
@@ -42,6 +43,9 @@ const outerWrapperCss = css`
 `
 const innerWrapperCss = css`
   height: ${cssVar(`--header-inner-height`)};
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 1fr;
 `
 
 function LayoutHeader() {
@@ -51,6 +55,9 @@ function LayoutHeader() {
         <nav>
           <Menu />
         </nav>
+        <div>
+          <Widgets />
+        </div>
       </MaxWidthContainer>
     </header>
   )
