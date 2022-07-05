@@ -110,6 +110,7 @@ function Widget(props: WidgetProps) {
   return (
     <Fragment>
       <button
+        aria-hidden
         css={toggleButtonCss}
         type="button"
         data-has-menu={needsMenu}
@@ -120,7 +121,7 @@ function Widget(props: WidgetProps) {
         <SchemeIcon scheme={colorScheme} color="currentColor" size={size - 4} />
       </button>
 
-      <menu aria-expanded={!needsMenu} ref={preferencesContainerRef} css={preferenceMenuCss(size)}>
+      <menu aria-hidden ref={preferencesContainerRef} css={preferenceMenuCss(size)}>
         {needsMenu &&
           Object.entries<string>({
             system: `Use OS theme`,
