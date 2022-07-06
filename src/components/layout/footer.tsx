@@ -20,7 +20,7 @@ const outerWrapperCss = css`
 
 function LayoutFooter() {
   return (
-    <footer css={outerWrapperCss}>
+    <footer role="contentinfo" css={outerWrapperCss}>
       <MaxWidthContainer>
         <Branding />
       </MaxWidthContainer>
