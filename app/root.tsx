@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { LinksFunction } from "@vercel/remix";
+import { LayoutContent, LayoutHeader } from "~/components/layout";
 import styles from "./main.css?url";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
@@ -20,7 +21,8 @@ export function Layout({ children }: React.PropsWithChildren) {
         <Links />
       </head>
       <body>
-        {children}
+        <LayoutHeader />
+        <LayoutContent>{children}</LayoutContent>
         <ScrollRestoration />
         <Scripts />
       </body>
