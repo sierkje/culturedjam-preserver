@@ -1,17 +1,25 @@
 import {
   Links,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 import { LinksFunction } from "@vercel/remix";
-import { LayoutContent, LayoutHeader } from "~/components/layout";
 import styles from "./main.css?url";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export function Layout({ children }: React.PropsWithChildren) {
+  const menuLinks: {
+    to: string;
+    label: string;
+  }[] = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+  ];
+
   return (
     <html lang="en">
       <head>
@@ -21,8 +29,23 @@ export function Layout({ children }: React.PropsWithChildren) {
         <Links />
       </head>
       <body>
-        <LayoutHeader />
-        <LayoutContent>{children}</LayoutContent>
+        <header className="page-header">
+          <ul className="main-menu">
+            {menuLinks.map(({ to, label }) => (
+              <li key={label} className="main-menu__item">
+                <NavLink
+                  to={to}
+                  className={({ isActive }) =>
+                    isActive ? "main-menu__link--current" : "main-menu__link"
+                  }
+                >
+                  {label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </header>
+        <div className="page-content">{children}</div>
         <ScrollRestoration />
         <Scripts />
       </body>

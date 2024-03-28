@@ -6,3 +6,49 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.page-header {
+  background-color: black;
+  box-shadow: 0 2px 2px hsl(0 0 0 / 0.5);
+  display: flex;
+  position: sticky;
+  min-height: 40px;
+  margin: 0 0 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.main-menu__item {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__link {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.main-menu__link:hover {
+  color: orange;
+}
+
+.main-menu__link--current {
+  cursor: default;
+}
+
+.main-menu__link--current:hover {
+  color: white;
+}
+
+.page-content {
+  padding: 0 0.5rem;
+}
